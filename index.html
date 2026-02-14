@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nuestra Historia ❤️</title>
-
 <style>
 body {
     margin: 0;
@@ -13,20 +12,9 @@ body {
     text-align: center;
     color: #444;
 }
-
-header {
-    padding: 40px 20px;
-}
-
-h1 {
-    font-size: 2.5em;
-    color: #d63384;
-}
-
-.section {
-    padding: 40px 20px;
-}
-
+header { padding: 40px 20px; }
+h1 { font-size: 2.5em; color: #d63384; }
+.section { padding: 40px 20px; }
 .card {
     background: white;
     margin: 20px auto;
@@ -35,12 +23,11 @@ h1 {
     max-width: 700px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
-
 img {
     width: 100%;
+    max-width: 250px;
     border-radius: 12px;
 }
-
 button {
     background-color: #ff4d88;
     color: white;
@@ -50,31 +37,31 @@ button {
     font-size: 1em;
     cursor: pointer;
 }
-
 #sorpresa {
     display: none;
     margin-top: 20px;
     font-weight: bold;
     color: #d63384;
 }
-.fade-in {
-    animation: aparecer 2s ease-in-out;
-}
-
+.fade-in { animation: aparecer 2s ease-in-out; }
 @keyframes aparecer {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 @keyframes latido {
     0% { transform: scale(1); }
     50% { transform: scale(1.08); }
     100% { transform: scale(1); }
+}
+/* Grid adaptable */
+.grid-fotos {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    justify-items: center;
+}
+@media (max-width: 600px) {
+    .grid-fotos { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -85,76 +72,73 @@ button {
 <div style="margin: 20px auto; max-width: 350px;">
     <iframe style="border-radius:12px"
         src="https://open.spotify.com/embed/track/6yCjU5j6YHbux2VQCBTTE1"
-        width="100%"
-        height="80"
-        frameborder="0"
+        width="100%" height="80" frameborder="0"
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
     </iframe>
 </div>
-    <h1>Jairo & Adri ❤️</h1>
-    <p>De todas las historias, la nuestra es mi favorita.</p>
+<h1>Jairo & Adri ❤️</h1>
+<p>De todas las historias, la nuestra es mi favorita.</p>
 </header>
 
 <div class="section">
 
 <div class="card">
-    <h2>Nuestra historia</h2>
-    <p>Todo comenzó una linda madrugada del 28 de enero de 2024.</p>
-    <p>Desde ese día, vivo en tu jardín con enanitos.</p>
-    <p><strong>¿Qué es lo peor que puede pasar?</strong></p>
-    <p>Que me enamore más de ti… y pasó. Ya no hay vuelta atrás ❤️</p>
+<h2>Nuestra historia</h2>
+<p>Todo comenzó una linda madrugada del 28 de enero de 2024.</p>
+<p>Desde ese día, vivo en tu jardín con enanitos.</p>
+<p><strong>¿Qué es lo peor que puede pasar?</strong></p>
+<p>Que me enamore más de ti… y pasó. Ya no hay vuelta atrás ❤️</p>
 </div>
 
 <div class="card">
-    <h2>El día de la montaña rusa 🎢</h2>
-    <p>Tú te desmayaste por un momento.</p>
-    <p>Yo iba con los ojos cerrados rezando 😅</p>
-    <p>Y cuando nos bajamos…</p>
-    <p>¡quisimos subirnos  a otras!</p>
+<h2>El día de la montaña rusa 🎢</h2>
+<p>Tú te desmayaste por un momento.</p>
+<p>Yo iba con los ojos cerrados rezando 😅</p>
+<p>Y cuando nos bajamos… ¡quisimos subirnos a otras!</p>
 </div>
 
 <div class="card">
-    <h2>Nuestros momentos 💕</h2>
-    <p>24 maravillosos recuerdos de tantos momentos que hemos vividos, millones de deseos de seguir sumando recuerdos contigo e infinitas razones para amarte.</p>
+<h2>Nuestros momentos 💕</h2>
+<p>24 maravillosos recuerdos de tantos momentos que hemos vividos, millones de deseos de seguir sumando recuerdos contigo e infinitas razones para amarte.</p>
 
-    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:10px;">
-        <img src="https://drive.google.com/uc?export=view&id=160WUe5q2m0CZBHEWoPDd7xLmgIXmHY3n">
-        <img src="https://drive.google.com/uc?export=view&id=1zWYfJDS_TfGA39W3kLxqtgxU3gQ-TSHq">
-        <img src="https://drive.google.com/uc?export=view&id=17XJK2pTTxmbcxmKP3dbrKVGgtp9RBaN9">
-        <img src="https://drive.google.com/uc?export=view&id=1D2TO64Q93fBW3UgK_QdgHoKymBKSHzF4">
-        <img src="https://drive.google.com/uc?export=view&id=1_04vOW8xerEeRXdQ-zcGSquWS5LM6yHD">
-        <img src="https://drive.google.com/uc?export=view&id=1fsoImQZPMGi0Ggd3pp4p0gI8kEi1gPel">
-        <img src="https://drive.google.com/uc?export=view&id=1tQ8cHg-BVn9DlbBssIgQmlCqKKW-l6KW">
-        <img src="https://drive.google.com/uc?export=view&id=1O32UINktxbVG7HrmmHpobyhHQ9izpQOs">
-        <img src="https://drive.google.com/uc?export=view&id=1N1zIXFawnwGbyzB1FhgXYpuSBAiOo9S1">
-        <img src="https://drive.google.com/uc?export=view&id=1oLYWiW4NK0pm2z4E_WHjtjbDcHSfh2FU">
-        <img src="https://drive.google.com/uc?export=view&id=10Ud4neklhJJFlbwB6SudtXEPSiLaJfLs">
-        <img src="https://drive.google.com/uc?export=view&id=1jXNRq4cfGQdbwIO0H4cQHqvrdHhSVMSX">
-        <img src="https://drive.google.com/uc?export=view&id=1ziJrfAQaoRjOnMvRvRBuG5ZdDjvNmC5u">
-        <img src="https://drive.google.com/uc?export=view&id=1MxcU07Liaa0O9FLAajv8TgapzVPtcZAf">
-        <img src="https://drive.google.com/uc?export=view&id=1AnicUlw67sJQYTlmVUZ6ec9Tua643HP7">
-        <img src="https://drive.google.com/uc?export=view&id=1YgTZbqkLWxej-_3uQztpemVIpQnf2CZB">
-        <img src="https://drive.google.com/uc?export=view&id=1zUEcN3QG6ESE3YSGgNrmlEG0lR62Aopt">
-        <img src="https://drive.google.com/uc?export=view&id=1xSQb4XitA4po0uz-xGzxqdKLXtjuZKfp">
-        <img src="https://drive.google.com/uc?export=view&id=1XuiTHIRU5OKZvhO2gQnh35Dokjo-QdxQ">
-        <img src="https://drive.google.com/uc?export=view&id=1bVvpR_2PwZxG8JDj9384F7_7AZyucB1w">
-        <img src="https://drive.google.com/uc?export=view&id=1gfRQeMWGqqD2KuvqZJ_aMfgLyD25e0Yb">
-        <img src="https://drive.google.com/uc?export=view&id=1bcYw7U4gF2wX8L4nP5rjCe6uE4Nq__lf">
-        <img src="https://drive.google.com/uc?export=view&id=1y4tCnv7M-nVsobSNAYTtldAp7Zyv6j9h">
-        <img src="https://drive.google.com/uc?export=view&id=1AuNmF6T_magmG_-Tou_sGjsBnzLpDJSL">
-    </div>
+<div class="grid-fotos">
+    <img src="https://drive.google.com/uc?export=view&id=160WUe5q2m0CZBHEWoPDd7xLmgIXmHY3n">
+    <img src="https://drive.google.com/uc?export=view&id=1zWYfJDS_TfGA39W3kLxqtgxU3gQ-TSHq">
+    <img src="https://drive.google.com/uc?export=view&id=17XJK2pTTxmbcxmKP3dbrKVGgtp9RBaN9">
+    <img src="https://drive.google.com/uc?export=view&id=1D2TO64Q93fBW3UgK_QdgHoKymBKSHzF4">
+    <img src="https://drive.google.com/uc?export=view&id=1_04vOW8xerEeRXdQ-zcGSquWS5LM6yHD">
+    <img src="https://drive.google.com/uc?export=view&id=1fsoImQZPMGi0Ggd3pp4p0gI8kEi1gPel">
+    <img src="https://drive.google.com/uc?export=view&id=1tQ8cHg-BVn9DlbBssIgQmlCqKKW-l6KW">
+    <img src="https://drive.google.com/uc?export=view&id=1O32UINktxbVG7HrmmHpobyhHQ9izpQOs">
+    <img src="https://drive.google.com/uc?export=view&id=1N1zIXFawnwGbyzB1FhgXYpuSBAiOo9S1">
+    <img src="https://drive.google.com/uc?export=view&id=1oLYWiW4NK0pm2z4E_WHjtjbDcHSfh2FU">
+    <img src="https://drive.google.com/uc?export=view&id=10Ud4neklhJJFlbwB6SudtXEPSiLaJfLs">
+    <img src="https://drive.google.com/uc?export=view&id=1jXNRq4cfGQdbwIO0H4cQHqvrdHhSVMSX">
+    <img src="https://drive.google.com/uc?export=view&id=1ziJrfAQaoRjOnMvRvRBuG5ZdDjvNmC5u">
+    <img src="https://drive.google.com/uc?export=view&id=1MxcU07Liaa0O9FLAajv8TgapzVPtcZAf">
+    <img src="https://drive.google.com/uc?export=view&id=1AnicUlw67sJQYTlmVUZ6ec9Tua643HP7">
+    <img src="https://drive.google.com/uc?export=view&id=1YgTZbqkLWxej-_3uQztpemVIpQnf2CZB">
+    <img src="https://drive.google.com/uc?export=view&id=1zUEcN3QG6ESE3YSGgNrmlEG0lR62Aopt">
+    <img src="https://drive.google.com/uc?export=view&id=1xSQb4XitA4po0uz-xGzxqdKLXtjuZKfp">
+    <img src="https://drive.google.com/uc?export=view&id=1XuiTHIRU5OKZvhO2gQnh35Dokjo-QdxQ">
+    <img src="https://drive.google.com/uc?export=view&id=1bVvpR_2PwZxG8JDj9384F7_7AZyucB1w">
+    <img src="https://drive.google.com/uc?export=view&id=1gfRQeMWGqqD2KuvqZJ_aMfgLyD25e0Yb">
+    <img src="https://drive.google.com/uc?export=view&id=1bcYw7U4gF2wX8L4nP5rjCe6uE4Nq__lf">
+    <img src="https://drive.google.com/uc?export=view&id=1y4tCnv7M-nVsobSNAYTtldAp7Zyv6j9h">
+    <img src="https://drive.google.com/uc?export=view&id=1AuNmF6T_magmG_-Tou_sGjsBnzLpDJSL">
+</div>
 </div>
 
 <div class="card">
-    <h2>Una promesa 💌</h2>
-    <p>Prometo seguir amándote en cada etapa.</p>
-    <p>Y seguir subiéndome contigo a cada montaña rusa que nos traiga la vida.</p>
-    <p>En altas y bajas, pero siempre a tu lado.</p>
+<h2>Una promesa 💌</h2>
+<p>Prometo seguir amándote en cada etapa.</p>
+<p>Y seguir subiéndome contigo a cada montaña rusa que nos traiga la vida.</p>
+<p>En altas y bajas, pero siempre a tu lado.</p>
 
-    <button onclick="mostrarSorpresa()">Haz clic si me amas 😏</button>
-    <div id="sorpresa">
-        Vale por un masaje profesional (hecho por mí 😌) + un abrazo eterno + muchos besitos + derecho a elegir la próxima película 🎬❤️
-    </div>
+<button onclick="mostrarSorpresa()">Haz clic si me amas 😏</button>
+<div id="sorpresa">
+Vale por un masaje profesional (hecho por mí 😌) + un abrazo eterno + muchos besitos + derecho a elegir la próxima película 🎬❤️
+</div>
 </div>
 
 </div>
@@ -164,6 +148,7 @@ function mostrarSorpresa() {
     document.getElementById("sorpresa").style.display = "block";
 }
 </script>
+
 <div style="
     margin-top:40px;
     font-size:1.8em;
@@ -172,8 +157,8 @@ function mostrarSorpresa() {
     color:#e91e63;
     animation: latido 1.5s infinite;
 ">
-    Te amooooooo❤️
+    Te amooooooo ❤️
 </div>
-</body>
 
+</body>
 </html>
