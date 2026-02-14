@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nuestra Historia ❤️</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #ffe6eb, #fff5f7);
+    text-align: center;
+    color: #444;
+}
+
+header {
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #d63384;
+}
+
+.section {
+    padding: 40px 20px;
+}
+
+.card {
+    background: white;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 700px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+button {
+    background-color: #ff4d88;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#sorpresa {
+    display: none;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #d63384;
+}
+.fade-in {
+    animation: aparecer 2s ease-in-out;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes latido {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+</style>
+</head>
+
+<body class="fade-in">
+
+<header>
+<div style="margin: 20px auto; max-width: 350px;">
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/6yCjU5j6YHbux2VQCBTTE1"
+        width="100%"
+        height="80"
+        frameborder="0"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+    </iframe>
+</div>
+    <h1>Jairo & Adri ❤️</h1>
+    <p>De todas las historias, la nuestra es mi favorita.</p>
+</header>
+
+<div class="section">
+
+<div class="card">
+    <h2>Nuestra historia</h2>
+    <p>Todo comenzó una linda madrugada del 28 de enero de 2024.</p>
+    <p>Desde ese día, vivo en tu jardín con enanitos.</p>
+    <p><strong>¿Qué es lo peor que puede pasar?</strong></p>
+    <p>Que me enamore más de ti… y pasó. Ya no hay vuelta atrás ❤️</p>
+</div>
+
+<div class="card">
+    <h2>El día de la montaña rusa 🎢</h2>
+    <p>Tú te desmayaste por un momento.</p>
+    <p>Yo iba con los ojos cerrados rezando 😅</p>
+    <p>Y cuando nos bajamos…</p>
+    <p>¡quisimos subirnos  a otras!</p>
+</div>
+
+<div class="card">
+    <h2>Nuestros momentos 💕</h2>
+    <p>24 maravillosos recuerdos de tantos momentos que hemos vividos, millones de deseos de seguir sumando recuerdos contigo e infinitas razones para amarte.</p>
+
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:10px;">
+        <img src="foto1.jpg">
+        <img src="foto2.jpg">
+        <img src="foto3.jpg">
+        <img src="foto4.jpg">
+        <img src="foto5.jpg">
+        <img src="foto6.jpg">
+        <img src="foto7.jpg">
+        <img src="foto8.jpg">
+        <img src="foto9.jpg">
+        <img src="foto10.jpg">
+        <img src="foto11.jpg">
+        <img src="foto12.jpg">
+        <img src="foto13.jpg">
+        <img src="foto14.jpg">
+        <img src="foto15.jpg">
+        <img src="foto16.jpg">
+        <img src="foto17.jpg">
+        <img src="foto18.jpg">
+        <img src="foto19.jpg">
+        <img src="foto20.jpg">
+        <img src="foto21.jpg">
+        <img src="foto22.jpg">
+        <img src="foto23.jpg">
+        <img src="foto24.jpg">
+    </div>
+</div>
+
+<div class="card">
+    <h2>Una promesa 💌</h2>
+    <p>Prometo seguir amándote en cada etapa.</p>
+    <p>Y seguir subiéndome contigo a cada montaña rusa que nos traiga la vida.</p>
+    <p>En altas y bajas, pero siempre a tu lado.</p>
+
+    <button onclick="mostrarSorpresa()">Haz clic si me amas 😏</button>
+    <div id="sorpresa">
+        Vale por un masaje profesional (hecho por mí 😌) + un abrazo eterno + muchos besitos + derecho a elegir la próxima película 🎬❤️
+    </div>
+</div>
+
+</div>
+
+<script>
+function mostrarSorpresa() {
+    document.getElementById("sorpresa").style.display = "block";
+}
+</script>
+<div style="
+    margin-top:40px;
+    font-size:1.8em;
+    font-weight:bold;
+    text-align:center;
+    color:#e91e63;
+    animation: latido 1.5s infinite;
+">
+    Te amooooooo❤️
+</div>
+</body>
+</html>
