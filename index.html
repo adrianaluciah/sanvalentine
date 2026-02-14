@@ -23,9 +23,10 @@ h1 { font-size: 2.5em; color: #d63384; }
     max-width: 700px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
-img {
+.grid-fotos img {
     width: 100%;
-    max-width: 250px;
+    height: 250px;       /* todas tendrán la misma altura */
+    object-fit: cover;   /* recorta sin deformar */
     border-radius: 12px;
 }
 button {
@@ -162,4 +163,5 @@ function mostrarSorpresa() {
 
 </body>
 </html>
+
 
