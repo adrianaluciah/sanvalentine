@@ -4,16 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nuestra Historia ❤️</title>
-    <div class="card">
-    <h2>Nuestro tiempo juntos ⏳❤️</h2>
-    <p style="font-size:1.4em;">
-        Llevamos
-    </p>
-    <p style="font-size:1.8em; font-weight:bold; color:#e91e63;">
-        <span id="contadorTiempo"></span>
-    </p>
-    <p>desde el 28 de enero de 2024 💕</p>
-</div>
+
 <style>
 body {
     margin: 0;
@@ -21,10 +12,13 @@ body {
     background: linear-gradient(to bottom, #ffe6eb, #fff5f7);
     text-align: center;
     color: #444;
+    overflow-x: hidden;
 }
 header { padding: 40px 20px; }
 h1 { font-size: 2.5em; color: #d63384; }
+
 .section { padding: 40px 20px; }
+
 .card {
     background: white;
     margin: 20px auto;
@@ -33,12 +27,25 @@ h1 { font-size: 2.5em; color: #d63384; }
     max-width: 700px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
+
+.grid-fotos {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    justify-items: center;
+}
+
 .grid-fotos img {
     width: 100%;
-    height: 250px;       /* todas tendrán la misma altura */
-    object-fit: cover;   /* recorta sin deformar */
+    height: 250px;
+    object-fit: cover;
     border-radius: 12px;
 }
+
+@media (max-width: 600px) {
+    .grid-fotos { grid-template-columns: 1fr; }
+}
+
 button {
     background-color: #ff4d88;
     color: white;
@@ -48,31 +55,45 @@ button {
     font-size: 1em;
     cursor: pointer;
 }
+
 #sorpresa {
     display: none;
     margin-top: 20px;
     font-weight: bold;
     color: #d63384;
 }
+
 .fade-in { animation: aparecer 2s ease-in-out; }
+
 @keyframes aparecer {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
 @keyframes latido {
     0% { transform: scale(1); }
     50% { transform: scale(1.08); }
     100% { transform: scale(1); }
 }
-/* Grid adaptable */
-.grid-fotos {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 10px;
-    justify-items: center;
+
+/* Corazones flotantes */
+.corazon {
+    position: fixed;
+    bottom: -50px;
+    font-size: 20px;
+    animation: flotar 12s linear infinite;
+    opacity: 0.7;
 }
-@media (max-width: 600px) {
-    .grid-fotos { grid-template-columns: 1fr; }
+
+@keyframes flotar {
+    from {
+        transform: translateY(0);
+        opacity: 0.7;
+    }
+    to {
+        transform: translateY(-110vh);
+        opacity: 0;
+    }
 }
 </style>
 </head>
@@ -81,17 +102,27 @@ button {
 
 <header>
 <div style="margin: 20px auto; max-width: 350px;">
-    <iframe style="border-radius:12px"
-        src="https://open.spotify.com/embed/track/6yCjU5j6YHbux2VQCBTTE1"
-        width="100%" height="80" frameborder="0"
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-    </iframe>
+<iframe style="border-radius:12px"
+src="https://open.spotify.com/embed/track/6yCjU5j6YHbux2VQCBTTE1"
+width="100%" height="80" frameborder="0"
+allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+</iframe>
 </div>
+
 <h1>Jairo & Adri ❤️</h1>
 <p>De todas las historias, la nuestra es mi favorita.</p>
 </header>
 
 <div class="section">
+
+<div class="card">
+<h2>Nuestro tiempo juntos ⏳❤️</h2>
+<p style="font-size:1.4em;">Llevamos</p>
+<p style="font-size:1.8em; font-weight:bold; color:#e91e63;">
+<span id="contadorTiempo"></span>
+</p>
+<p>desde el 28 de enero de 2024 💕</p>
+</div>
 
 <div class="card">
 <h2>Nuestra historia</h2>
@@ -110,33 +141,34 @@ button {
 
 <div class="card">
 <h2>Nuestros momentos 💕</h2>
-<p>24 maravillosos recuerdos de tantos momentos que hemos vividos, millones de deseos de seguir sumando recuerdos contigo e infinitas razones para amarte.</p>
+<p>24 maravillosos recuerdos y millones de deseos de seguir sumando recuerdos contigo ❤️</p>
 
 <div class="grid-fotos">
-    <img src="https://i.imgur.com/UNIyQAA.jpeg" alt="Foto 1">
-    <img src="https://i.imgur.com/x8eC5CF.jpeg" alt="Foto 2">
-    <img src="https://i.imgur.com/Ayev7oA.jpeg" alt="Foto 3">
-    <img src="https://i.imgur.com/JOxC4iG.jpeg" alt="Foto 4">
-    <img src="https://i.imgur.com/UNQCZI8.jpeg" alt="Foto 5">
-    <img src="https://i.imgur.com/QyJjWZT.jpeg" alt="Foto 6">
-    <img src="https://i.imgur.com/st4imru.jpeg" alt="Foto 7">
-    <img src="https://i.imgur.com/ktO6vZs.jpeg" alt="Foto 8">
-    <img src="https://i.imgur.com/NDTpeWJ.jpeg" alt="Foto 9">
-    <img src="https://i.imgur.com/Y8i12lD.jpeg" alt="Foto 10">
-    <img src="https://i.imgur.com/PE7QYMX.jpeg" alt="Foto 11">
-    <img src="https://i.imgur.com/DoDkqf4.jpeg" alt="Foto 12">
-    <img src="https://i.imgur.com/xOKKUdb.jpeg" alt="Foto 13">
-    <img src="https://i.imgur.com/4qgeggF.jpeg" alt="Foto 14">
-    <img src="https://i.imgur.com/aweAo61.jpeg" alt="Foto 15">
-    <img src="https://i.imgur.com/Z0gmm4I.jpeg" alt="Foto 16">
-    <img src="https://i.imgur.com/E6SGzih.jpeg" alt="Foto 17">
-    <img src="https://i.imgur.com/r9ToArc.jpeg" alt="Foto 18">
-    <img src="https://i.imgur.com/XtfqLAV.jpeg" alt="Foto 19">
-    <img src="https://i.imgur.com/0Yd46dp.jpeg" alt="Foto 20">
-    <img src="https://i.imgur.com/mR3TLI6.jpeg" alt="Foto 21">
-    <img src="https://i.imgur.com/GUhG8ep.jpeg" alt="Foto 22">
-    <img src="https://i.imgur.com/poUN8Mu.jpeg" alt="Foto 23">
-    <img src="https://i.imgur.com/eZkGwC2.jpeg" alt="Foto 24">
+<!-- Tus 24 imágenes se mantienen igual -->
+<img src="https://i.imgur.com/UNIyQAA.jpeg">
+<img src="https://i.imgur.com/x8eC5CF.jpeg">
+<img src="https://i.imgur.com/Ayev7oA.jpeg">
+<img src="https://i.imgur.com/JOxC4iG.jpeg">
+<img src="https://i.imgur.com/UNQCZI8.jpeg">
+<img src="https://i.imgur.com/QyJjWZT.jpeg">
+<img src="https://i.imgur.com/st4imru.jpeg">
+<img src="https://i.imgur.com/ktO6vZs.jpeg">
+<img src="https://i.imgur.com/NDTpeWJ.jpeg">
+<img src="https://i.imgur.com/Y8i12lD.jpeg">
+<img src="https://i.imgur.com/PE7QYMX.jpeg">
+<img src="https://i.imgur.com/DoDkqf4.jpeg">
+<img src="https://i.imgur.com/xOKKUdb.jpeg">
+<img src="https://i.imgur.com/4qgeggF.jpeg">
+<img src="https://i.imgur.com/aweAo61.jpeg">
+<img src="https://i.imgur.com/Z0gmm4I.jpeg">
+<img src="https://i.imgur.com/E6SGzih.jpeg">
+<img src="https://i.imgur.com/r9ToArc.jpeg">
+<img src="https://i.imgur.com/XtfqLAV.jpeg">
+<img src="https://i.imgur.com/0Yd46dp.jpeg">
+<img src="https://i.imgur.com/mR3TLI6.jpeg">
+<img src="https://i.imgur.com/GUhG8ep.jpeg">
+<img src="https://i.imgur.com/poUN8Mu.jpeg">
+<img src="https://i.imgur.com/eZkGwC2.jpeg">
 </div>
 </div>
 
@@ -147,73 +179,74 @@ button {
 <p>En altas y bajas, pero siempre a tu lado.</p>
 
 <button onclick="mostrarSorpresa()">Haz clic si me amas 😏</button>
+
 <div id="sorpresa">
-Vale por un masaje profesional (hecho por mí 😌) + un abrazo eterno + muchos besitos + derecho a elegir la próxima película 🎬❤️
+Vale por un masaje profesional + un abrazo eterno + muchos besitos + derecho a elegir la próxima película 🎬❤️
 </div>
 </div>
 
+</div>
+
+<div style="margin-top:40px; font-size:1.8em; font-weight:bold; color:#e91e63; animation: latido 1.5s infinite;">
+Te amooooooo ❤️
 </div>
 
 <script>
 function mostrarSorpresa() {
-    document.getElementById("sorpresa").style.display = "block";
+document.getElementById("sorpresa").style.display = "block";
 }
-</script>
-<script>
+
 function calcularTiempoJuntos() {
-    const inicio = new Date(2024, 0, 28); // 28 enero 2024 (mes empieza en 0)
-    const hoy = new Date();
+const inicio = new Date(2024, 0, 28);
+const hoy = new Date();
 
-    let años = hoy.getFullYear() - inicio.getFullYear();
-    let meses = hoy.getMonth() - inicio.getMonth();
-    let dias = hoy.getDate() - inicio.getDate();
+let años = hoy.getFullYear() - inicio.getFullYear();
+let meses = hoy.getMonth() - inicio.getMonth();
+let dias = hoy.getDate() - inicio.getDate();
 
-    if (dias < 0) {
-        meses--;
-        const ultimoMes = new Date(hoy.getFullYear(), hoy.getMonth(), 0);
-        dias += ultimoMes.getDate();
-    }
+if (dias < 0) {
+meses--;
+const ultimoMes = new Date(hoy.getFullYear(), hoy.getMonth(), 0);
+dias += ultimoMes.getDate();
+}
 
-    if (meses < 0) {
-        años--;
-        meses += 12;
-    }
+if (meses < 0) {
+años--;
+meses += 12;
+}
 
-    let texto = "";
-    if (años > 0) texto += años + (años === 1 ? " año " : " años ");
-    if (meses > 0) texto += meses + (meses === 1 ? " mes " : " meses ");
-    texto += dias + (dias === 1 ? " día" : " días");
+let texto = "";
+if (años > 0) texto += años + (años === 1 ? " año " : " años ");
+if (meses > 0) texto += meses + (meses === 1 ? " mes " : " meses ");
+texto += dias + (dias === 1 ? " día" : " días");
 
-    document.getElementById("contadorTiempo").textContent = texto;
+document.getElementById("contadorTiempo").textContent = texto;
 }
 
 calcularTiempoJuntos();
-</script>
-<div style="
-    margin-top:40px;
-    font-size:1.8em;
-    font-weight:bold;
-    text-align:center;
-    color:#e91e63;
-    animation: latido 1.5s infinite;
-">
-    Te amooooooo ❤️
-</div>
-<script>
-function calcularDiasJuntos() {
-    const fechaInicio = new Date("2024-01-28");
-    const hoy = new Date();
 
-    const diferencia = hoy - fechaInicio;
-    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+/* Crear corazones lentos */
+function crearCorazon() {
+const corazon = document.createElement("div");
+corazon.classList.add("corazon");
+corazon.innerHTML = "❤️";
+corazon.style.left = Math.random() * 100 + "vw";
+corazon.style.fontSize = (15 + Math.random() * 20) + "px";
+corazon.style.animationDuration = (10 + Math.random() * 8) + "s";
+document.body.appendChild(corazon);
 
-    document.getElementById("contadorDias").textContent = dias;
+setTimeout(() => {
+corazon.remove();
+}, 18000);
 }
 
-calcularDiasJuntos();
+setInterval(crearCorazon, 1200);
 </script>
+
 </body>
 </html>
+
+
 
 
 
