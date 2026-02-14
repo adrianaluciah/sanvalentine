@@ -6,10 +6,13 @@
 <title>Nuestra Historia ❤️</title>
     <div class="card">
     <h2>Nuestro tiempo juntos ⏳❤️</h2>
-    <p>Llevamos</p>
-    <p style="font-size:2em; font-weight:bold; color:#e91e63;">
-        <span id="contadorDias"></span> días juntos
+    <p style="font-size:1.4em;">
+        Llevamos
     </p>
+    <p style="font-size:1.8em; font-weight:bold; color:#e91e63;">
+        <span id="contadorTiempo"></span>
+    </p>
+    <p>desde el 28 de enero de 2024 💕</p>
 </div>
 <style>
 body {
@@ -156,7 +159,36 @@ function mostrarSorpresa() {
     document.getElementById("sorpresa").style.display = "block";
 }
 </script>
+<script>
+function calcularTiempoJuntos() {
+    const inicio = new Date(2024, 0, 28); // 28 enero 2024 (mes empieza en 0)
+    const hoy = new Date();
 
+    let años = hoy.getFullYear() - inicio.getFullYear();
+    let meses = hoy.getMonth() - inicio.getMonth();
+    let dias = hoy.getDate() - inicio.getDate();
+
+    if (dias < 0) {
+        meses--;
+        const ultimoMes = new Date(hoy.getFullYear(), hoy.getMonth(), 0);
+        dias += ultimoMes.getDate();
+    }
+
+    if (meses < 0) {
+        años--;
+        meses += 12;
+    }
+
+    let texto = "";
+    if (años > 0) texto += años + (años === 1 ? " año " : " años ");
+    if (meses > 0) texto += meses + (meses === 1 ? " mes " : " meses ");
+    texto += dias + (dias === 1 ? " día" : " días");
+
+    document.getElementById("contadorTiempo").textContent = texto;
+}
+
+calcularTiempoJuntos();
+</script>
 <div style="
     margin-top:40px;
     font-size:1.8em;
@@ -182,6 +214,7 @@ calcularDiasJuntos();
 </script>
 </body>
 </html>
+
 
 
 
