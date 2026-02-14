@@ -4,6 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nuestra Historia ❤️</title>
+    <div class="card">
+    <h2>Nuestro tiempo juntos ⏳❤️</h2>
+    <p>Llevamos</p>
+    <p style="font-size:2em; font-weight:bold; color:#e91e63;">
+        <span id="contadorDias"></span> días juntos
+    </p>
+</div>
 <style>
 body {
     margin: 0;
@@ -160,8 +167,21 @@ function mostrarSorpresa() {
 ">
     Te amooooooo ❤️
 </div>
+<script>
+function calcularDiasJuntos() {
+    const fechaInicio = new Date("2024-01-28");
+    const hoy = new Date();
 
+    const diferencia = hoy - fechaInicio;
+    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+
+    document.getElementById("contadorDias").textContent = dias;
+}
+
+calcularDiasJuntos();
+</script>
 </body>
 </html>
+
 
 
